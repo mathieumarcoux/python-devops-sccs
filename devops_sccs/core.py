@@ -168,6 +168,8 @@ class Core(object):
     @classmethod
     async def create(cls, config={}):
         self = Core()
+        
+        print("devops sccs config provision test")
 
         self.provision = Provision(
             config["provision"].get("checkout_base_path", "/tmp"),
